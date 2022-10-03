@@ -1,0 +1,159 @@
+/* HERO section start */
+section.hero {
+  background-image: url(../images/otherpageBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: white;
+  position: relative;
+  padding: 0;
+}
+
+section.hero div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-color: rgba(12, 90, 52, 0.85);
+  padding-inline: 30px;
+}
+
+section.hero div p {
+  margin-top: 15px;
+  text-align: center;
+}
+/* HERO section end */
+
+/* SERVICES section start */
+section.services {
+  background-color: #f7fffb;
+  margin: 0;
+  padding-block: 100px;
+}
+
+section.services .container {
+  text-align: center;
+}
+
+section.services .desc h3 {
+  margin-bottom: 24px;
+}
+
+section.services .desc h3 span {
+  color: #2ed081;
+  font-size: 25px;
+}
+
+section.services .desc p {
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 70px;
+}
+
+section.services .servicePhotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+section.services .servicePhotos div {
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section.services .servicePhotos div:nth-child(1) {
+  background-image: url(../images/services\ 1.png);
+}
+
+section.services .servicePhotos div:nth-child(2) {
+  background-image: url(../images/services\ 2.png);
+}
+section.services .servicePhotos div:nth-child(3) {
+  background-image: url(../images/services\ 3.png);
+}
+
+section.services .servicePhotos div p {
+  color: white;
+}
+/* SERVICES section end */
+
+/* More Services */
+section.more_services h3 {
+  color: #2ed081;
+  text-align: center;
+}
+
+section.more_services h4 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+section.more_services h4 span {
+  color: #2ed081;
+}
+
+section.more_services p {
+  margin-top: 24px;
+  text-align: center;
+}
+
+section.more_services h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+section.more_services .icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  padding-block: 60px 100px;
+}
+
+section.more_services .icons div {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+/* End More Services */
+
+/* ----------RESPONSIVENESS--------- */
+@media screen and (min-width: 996px) {
+  section.services .servicePhotos div::before {
+    content: "Each project requires a tailored design concept which is unique to the brand and in line with the business needs. At this stage, we will work hand-in-hand with the client and design team to develop the ceoncept, review procument options, cost plans, buildability and construction logistics.";
+    position: absolute;
+    background-color: #b3b3b3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-inline: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  section.services .servicePhotos div:hover::before {
+    opacity: 1;
+  }
+
+  section.more_services .icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+    padding-block: 60px 100px;
+  }
+}
