@@ -112,7 +112,7 @@ header .mobile_nav {
   align-content: center;
   justify-items: center;
   gap: 50px;
-  translate: 100vw;
+  left: 100vw;
   transition: 0.5s;
 }
 
@@ -129,7 +129,7 @@ header .mobile_nav a.active {
 }
 
 header .mobile_nav.slide {
-  translate: 0vw;
+  left: 0vw;
 }
 /* End Header */
 
