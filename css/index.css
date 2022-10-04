@@ -141,7 +141,8 @@ section.projectShow .projectShowPics div h2 {
 section.projectShow .projectShowPics div p {
   color: #2ed081;
   margin-top: 15px;
-  padding-inline: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 section.projectShow a {
@@ -252,11 +253,6 @@ div.testsay div p:nth-child(4) {
     font-size: 25px;
   }
 
-  section.services .servicePhotos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   section.services .servicePhotos div {
     width: 100%;
   }
