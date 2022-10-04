@@ -1,0 +1,161 @@
+/* HERO section start */
+section.hero {
+  background-image: url(../images/otherpageBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: white;
+  position: relative;
+  padding: 0;
+}
+
+section.hero div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-color: rgba(12, 90, 52, 0.85);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+section.hero div p {
+  margin-top: 15px;
+  text-align: center;
+}
+/* HERO section end */
+
+/* about experts start */
+/* left part */
+section.about {
+  background-color: #f7fffb;
+}
+
+section.about .container {
+  gap: 50px;
+}
+
+section.about h1 {
+  font-size: 40px;
+}
+section.about h1 span {
+  color: #2ed081;
+}
+
+section.about .left-part {
+  display: grid;
+}
+
+section.about .left-part h4 {
+  color: #2ed081;
+  margin-bottom: 30px;
+}
+section.about .left-part p {
+  margin-top: 15px;
+  line-height: 35px;
+}
+section.about .left-part ul {
+  margin-top: 20px;
+  line-height: 32px;
+}
+section.about .left-part ul li {
+  list-style-type: none;
+}
+section.about .left-part ul li i {
+  font-size: 10px;
+  color: #2ed081;
+  background-color: #def5ee;
+  padding: 5px;
+  border-radius: 50%;
+}
+section.about .left-part div a {
+  background-color: #2ed081;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+section.about .left-part div {
+  margin-top: 20px;
+}
+section.about .left-part div a:hover {
+  background-color: #96e7c0;
+}
+section.about .left-part div a:active {
+  background-color: #176841;
+}
+/* left part end */
+
+/* right part start */
+section.about .right-part {
+  display: block;
+}
+
+section.about .right-part img {
+  width: 100%;
+  max-width: 100%;
+}
+/* right part end */
+/* about experts end */
+
+/* Team members start */
+section.teamMembers {
+  margin-bottom: 100px;
+}
+
+section.teamMembers h2 {
+  color: #2ed081;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.teamMembers h3 {
+  font-size: clamp(25px, 5vw, 40px);
+  text-align: center;
+  font-weight: 600;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.teamMembers .theTeam {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding-top: 50px;
+}
+
+section.teamMembers .theTeam .member {
+  position: relative;
+}
+
+section.teamMembers .theTeam .member img {
+  width: 100%;
+}
+
+section.teamMembers .theTeam .member .details {
+  background: #fff;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  bottom: 50px;
+  box-shadow: 0 0 10px -4px rgb(0 0 0 / 50%);
+}
+/* Team members end */
+
+/* ----------RESPONSIVENESS--------- */
+@media screen and (min-width: 996px) {
+  section.about .right-part img {
+    width: 45vw;
+    max-width: 500px;
+  }
+}

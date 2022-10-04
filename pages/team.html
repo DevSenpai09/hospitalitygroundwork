@@ -1,103 +1,204 @@
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Our Team</title>
-        <link rel="stylesheet" href="css/OurTeam.css" />
-        <link rel="stylesheet" href="icofont/icofont/icofont.css" />
-        <link rel="stylesheet" href="icofont/icofont/icofont.min.css" />
-        <link rel="stylesheet" href="css/general.css">
-      </head>
-      <body>
-        <!-- header start -->
-    <section class="header">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HGW | Our Team</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/team.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
       <div class="container">
-        <div><img src="images/logo.png" alt="" /></div>
+        <div>
+          <a href="../index.html"
+            ><img src="../images/logo.svg" alt="Logo"
+          /></a>
+        </div>
         <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="aboutus.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="OurTeam.html">Our Team</a></li>
-          <li><a href="">Media Room</a></li>
-          <li><a href="getintouch.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="#" class="active">Our Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
           <li class="nav"><i class="icofont-navigation-menu"></i></li>
         </ul>
+        <button onclick="setIsMobileNav()">
+          <img
+            id="cancel"
+            src="../icons/cancel-outline-rounded.svg"
+            alt="cancelicon"
+          />
+          <img
+            id="hamburger"
+            src="../icons/charm_menu-hamburger.svg"
+            alt="cancelicon"
+          />
+        </button>
+      </div>
+      <div class="mobile_nav">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./services.html"> Services</a>
+        <a href="#" class="active">Our Team</a>
+        <a href="">Blog</a>
+        <a href="./contact.html">Contact Us</a>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Hero start -->
+    <section class="hero">
+      <div>
+        <h2>Our Team Members</h2>
+        <p>Meet the brains and wonderful talents behind our company.</p>
       </div>
     </section>
-    <!-- header end -->
-        <!-- Hero start -->
-        <section class="serviceHero">
-         <div class="container">
-           <div>
-            <h3>Our Team Members</h3>
-            <p>Meet the brains and wonderful talents behind our company.</p>
-          </div>
-         </div>
-        </section>
-        <!-- Hero end -->
+    <!-- Hero end -->
 
-        <!-- about experts start -->
+    <!-- about experts start -->
     <section class="about">
       <div class="container">
         <div class="left-part">
-        <h4>ABOUT OUR EXPERTS</h4>
-        <h1>Entrust Your Projects To Our <span>Specialists</span></h1>
-        <p>
-          Hospitality Groundworks is a modern and innovative hospitality
-          consulting firm with a solid experience and expertise in providing
-          top-notch hospitality advisory and support services for hospitality
-          and liesure businesses in Nigeria and SubSaharan Africa.
-        </p>
+          <h4>ABOUT OUR EXPERTS</h4>
+          <h1>Entrust Your Projects To Our <span>Specialists</span></h1>
+          <p>
+            Hospitality Groundworks is a modern and innovative hospitality
+            consulting firm with a solid experience and expertise in providing
+            top-notch hospitality advisory and support services for hospitality
+            and liesure businesses in Nigeria and SubSaharan Africa.
+          </p>
 
-        <ul>
-          <li><i class="icofont-ui-check"></i> Commercial food service</li>
-          <li>
-            <i class="icofont-ui-check"></i> Nightlife & entertainment services
-          </li>
-          <li>
-            <i class="icofont-ui-check"></i> Hotel & resort developers, owners &
-            operators.
-          </li>
-          <li>
-            <i class="icofont-ui-check"></i> Local, State & National government.
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <img src="../icons/tick-circle.svg" alt="" /> Commercial food
+              service
+            </li>
+            <li>
+              <img src="../icons/tick-circle.svg" alt="" /> Nightlife &
+              entertainment services
+            </li>
+            <li>
+              <img src="../icons/tick-circle.svg" alt="" /> Hotel & resort
+              developers, owners & operators.
+            </li>
+            <li>
+              <img src="../icons/tick-circle.svg" alt="" /> Local, State &
+              National government.
+            </li>
+          </ul>
 
-        <div><a href="">More About Us</a></div>
-      </div>
+          <a href=""><button>More About Us</button></a>
+        </div>
 
-      <div class="right-part">
-        
-      </div>
+        <div class="right-part">
+          <img src="../images/aboutEXP.png" alt="" />
+        </div>
       </div>
     </section>
     <!-- about experts end  -->
 
     <!-- Team members start -->
-    <section class="TeamMembers">
-       <div class="container">
-         <div>
-            <h3>TEAM MEMBERS</h3>
-        <h1>Meet Our Experienced Service Providers</h1>
+    <section class="teamMembers">
+      <div class="container">
+        <div>
+          <h2>TEAM MEMBERS</h2>
+          <h3>Meet Our Experienced Service Providers</h3>
         </div>
 
-        <div class="TeamPhoto">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="theTeam">
+          <div class="member">
+            <img src="../images/team 1.png" alt="Member Image" />
+            <div class="details">
+              <h4>Michael Okeke</h4>
+              <p>Founder</p>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="../images/team 1.png" alt="Member Image" />
+            <div class="details">
+              <h4>Michael Okeke</h4>
+              <p>Founder</p>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="../images/team 1.png" alt="Member Image" />
+            <div class="details">
+              <h4>Michael Okeke</h4>
+              <p>Founder</p>
+            </div>
+          </div>
         </div>
 
-        <div class="teamName">
-          <div><h2>Michael Okeke</h2> <p>Founder</p></div>
-          <div><h2>Ako Rita</h2> <p>Founder</p></div>
-          <div><h2>Abraham Ukoyoma</h2> <p>Founder</p></div>
-        </div>
-       </div>
+        <!-- <div class="teamName">
+          <div>
+            <h2>Michael Okeke</h2>
+            <p>Founder</p>
+          </div>
+          <div>
+            <h2>Ako Rita</h2>
+            <p>Founder</p>
+          </div>
+          <div>
+            <h2>Abraham Ukoyoma</h2>
+            <p>Founder</p>
+          </div>
+        </div> -->
+      </div>
     </section>
     <!-- Team members end -->
-      </body>
-    </html>
+
+    <!-- Footer  -->
+    <footer>
+      <div class="container">
+        <!-- Contacts -->
+        <div class="contacts">
+          <h3>Contacts</h3>
+          <div>
+            <h4>Email :</h4>
+            <p>Hospitalitygroundworks@gmail.com</p>
+          </div>
+          <div>
+            <h4>Phone Number :</h4>
+            <p>09056279228</p>
+          </div>
+          <div>
+            <h4>Office Address :</h4>
+            <p>
+              Silhouette towers, Sinari Daranijo street Victoria Island, Lagos,
+              Nigeria.
+            </p>
+          </div>
+          <div class="socials">
+            <img src="../icons/facebook.svg" alt="facebook icon" />
+            <img src="../icons/twitter.svg" alt="facebook icon" />
+            <img src="../icons/linkedin.svg" alt="facebook icon" />
+            <img src="../icons/instagram.svg" alt="facebook icon" />
+            <img src="../icons/whatsapp.svg" alt="facebook icon" />
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="company" style="display: none">
+          <h3>Company</h3>
+          <a>Articles</a>
+          <a>Services</a>
+          <a>About Us</a>
+          <a>Contact Us</a>
+        </div>
+
+        <!-- CopyRight -->
+        <div class="copyright">
+          <p>Hospitality Ground Works &copy; 2022</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>
