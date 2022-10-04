@@ -16,7 +16,8 @@ section.hero div {
   align-content: center;
   justify-items: center;
   background-color: rgba(12, 90, 52, 0.85);
-  padding-inline: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 section.hero div p {
@@ -29,7 +30,8 @@ section.hero div p {
 section.services {
   background-color: #f7fffb;
   margin: 0;
-  padding-block: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 section.services .container {
@@ -54,7 +56,7 @@ section.services .desc p {
 section.services .servicePhotos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 section.services .servicePhotos div {
@@ -117,7 +119,8 @@ section.more_services .icons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
-  padding-block: 60px 100px;
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 section.more_services .icons div {
@@ -140,7 +143,8 @@ section.more_services .icons div {
     display: flex;
     align-items: center;
     text-align: left;
-    padding-inline: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
     opacity: 0;
     transition: 0.5s;

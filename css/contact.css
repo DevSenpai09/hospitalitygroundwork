@@ -16,7 +16,8 @@ section.hero div {
   align-content: center;
   justify-items: center;
   background-color: rgba(12, 90, 52, 0.85);
-  padding-inline: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 section.hero div p {

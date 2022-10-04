@@ -17,7 +17,8 @@ body {
 
 section {
   margin-top: 100px;
-  padding-inline: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 section.hero {
@@ -137,7 +138,8 @@ header .mobile_nav.slide {
 section.about {
   background-color: #f7fffb;
   margin: 0;
-  padding-block: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 section.about .container {
@@ -292,7 +294,8 @@ section.newsletter {
   background-position: center;
   display: grid;
   place-items: center;
-  padding-block: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 section.newsletter h3 {
   font-size: clamp(22px, 5vw, 32px);
@@ -338,13 +341,15 @@ section.newsletter button:active {
 /* Footer */
 footer {
   background-color: #131313;
-  padding-inline: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 footer .contacts {
   display: grid;
   gap: 15px;
-  padding-block: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 footer .contacts div:nth-of-type(-n + 3) {

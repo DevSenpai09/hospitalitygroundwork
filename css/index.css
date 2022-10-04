@@ -9,7 +9,8 @@ section.hero {
   margin: 0px;
   display: grid;
   place-items: center;
-  padding-block: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 section.hero .heroButtons {
@@ -78,7 +79,7 @@ section.services .desc p {
 section.services .servicePhotos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 section.services .servicePhotos div {
@@ -134,7 +135,8 @@ section.projectShow .projectShowPics div h2 {
   font-size: clamp(22px, 4vw, 32px);
   color: #494949;
   margin-top: 24px;
-  padding-inline: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 section.projectShow .projectShowPics div p {
   color: #2ed081;
@@ -232,9 +234,6 @@ div.testsay div p:nth-child(4) {
   /* hero end */
 
   /* services start */
-  section.services {
-    padding: 0% 7%;
-  }
   section.services > div:nth-child(1) p > span {
     display: none;
     text-align: center;
@@ -259,8 +258,7 @@ div.testsay div p:nth-child(4) {
     align-items: center;
   }
   section.services .servicePhotos div {
-    width: 85%;
-    margin-top: 30px;
+    width: 100%;
   }
   section.services .servicePhotos div:nth-child(1) p {
     color: white;
