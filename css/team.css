@@ -36,10 +36,9 @@ section.hero div p {
 /* left part */
 section.about {
   background-color: #f7fffb;
-}
-
-section.about .container {
-  gap: 50px;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 section.about h1 {
@@ -47,10 +46,6 @@ section.about h1 {
 }
 section.about h1 span {
   color: #2ed081;
-}
-
-section.about .left-part {
-  display: grid;
 }
 
 section.about .left-part h4 {
@@ -75,20 +70,17 @@ section.about .left-part ul li i {
   padding: 5px;
   border-radius: 50%;
 }
-section.about .left-part div a {
+section.about .left-part button {
   background-color: #2ed081;
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 50px;
 }
 section.about .left-part div {
   margin-top: 20px;
-}
-section.about .left-part div a:hover {
-  background-color: #96e7c0;
-}
-section.about .left-part div a:active {
-  background-color: #176841;
 }
 /* left part end */
 
@@ -139,6 +131,8 @@ section.teamMembers .theTeam .member {
 
 section.teamMembers .theTeam .member img {
   width: 100%;
+  height: 350px;
+  border-radius: 10px;
 }
 
 section.teamMembers .theTeam .member .details {
