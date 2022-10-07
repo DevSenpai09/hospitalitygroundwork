@@ -101,6 +101,7 @@ section.more_services h4 span {
 section.more_services p {
   margin-top: 24px;
   text-align: center;
+  line-height: 25px;
 }
 
 section.more_services h5 {

@@ -1,16 +1,46 @@
 /* HERO section start */
 section.hero {
-  background-image: linear-gradient(-8deg, var(--primary), var(--secondary)),
-    url(../images/Frame\ 3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 60vh;
   color: white;
   margin: 0px;
+  padding: 0px;
   display: grid;
-  place-items: center;
+}
+
+section.hero .slide {
+  opacity: 0;
+  grid-area: -1/1;
+  width: 100%;
+  height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 2s;
+}
+
+section.hero .active_slide {
+  opacity: 1;
+}
+
+section.hero .slide:nth-child(1) {
+  background-image: linear-gradient(-8deg, var(--primary), var(--secondary)),
+    url(../images/aboutBG.png);
+}
+
+section.hero .slide:nth-child(2) {
+  background-image: linear-gradient(-8deg, var(--primary), var(--secondary)),
+    url(../images/Slide2.png);
+}
+
+section.hero .slide:nth-child(3) {
+  background-image: linear-gradient(-8deg, var(--primary), var(--secondary)),
+    url(../images/slide3.png);
 }
 
 section.hero .heroButtons {
@@ -18,14 +48,19 @@ section.hero .heroButtons {
   gap: 24px;
   margin-top: 24px;
 }
+
+section.hero div {
+  text-align: left;
+}
+
 section.hero div h2 {
-  font-size: 32px;
+  font-size: clamp(24px, 5vw, 32px);
   max-width: 630px;
-  line-height: 39px;
+  line-height: 40px;
 }
 section.hero div p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
   max-width: 607px;
   margin-top: 15px;
 }
@@ -325,17 +360,6 @@ div.testsay div p:nth-child(4) {
   section.hero div {
     width: 100%;
     text-align: center;
-  }
-  section.hero div h2 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  section.hero div p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 167.3%;
-    width: 100%;
   }
   /* hero end */
 

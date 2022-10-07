@@ -57,19 +57,56 @@
 
     <!-- Hero start -->
     <section class="hero">
-      <div class="container">
-        <h2>Leaders in the Sub-Saharan Hospitality Industry</h2>
-        <p>
-          We are a network of independent hospitality professionals with
-          hands-on multidisciplinary hospitality expertise and experience who
-          provide world class advisory and support services to help hospitality
-          prodcuts and maximise profitability whilst inspiring teams and gaining
-          high market shares.
-        </p>
+      <div class="slide active_slide">
+        <div class="container">
+          <h2>Leaders in the Sub-Saharan Hospitality Industry</h2>
+          <p>
+            We are a network of independent hospitality professionals with
+            hands-on multidisciplinary hospitality expertise and experience who
+            provide world class advisory and support services to help
+            hospitality prodcuts and maximise profitability whilst inspiring
+            teams and gaining high market shares.
+          </p>
 
-        <div class="heroButtons">
-          <a href=""><button>VIEW SERVICES</button></a>
-          <a href=""><button>CONTACT US</button></a>
+          <div class="heroButtons">
+            <a href=""><button>VIEW SERVICES</button></a>
+            <a href=""><button>CONTACT US</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="container">
+          <h2>Forerunners In The Nigerian Hospitality And Liesure Industry</h2>
+          <p>
+            At Hospitality groundworks, we provide solutions to existing and new
+            businesses, from simple assessments to turkey projects. We handle
+            all operational needs, project planning, concept design planning,
+            recruitment, branding etc.
+          </p>
+
+          <div class="heroButtons">
+            <a href=""><button>VIEW SERVICES</button></a>
+            <a href=""><button>CONTACT US</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="container">
+          <h2>Leaders in the Sub-Saharan Hospitality Industry</h2>
+          <p>
+            We are a network of independent hospitality professionals with
+            hands-on multidisciplinary hospitality expertise and experience who
+            provide world class advisory and support services to help
+            hospitality prodcuts and maximise profitability whilst inspiring
+            teams and gaining high market shares.
+          </p>
+
+          <div class="heroButtons">
+            <a href=""><button>VIEW SERVICES</button></a>
+            <a href=""><button>CONTACT US</button></a>
+          </div>
         </div>
       </div>
     </section>
@@ -362,5 +399,21 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <script>
+      let slides = document.getElementsByClassName("slide");
+      slides = [...slides];
+      let currentSlide = 0;
+      let nextSlide = 1;
+
+      setInterval(() => {
+        if (slides[currentSlide].classList.contains("active_slide")) {
+          slides[currentSlide].classList.remove("active_slide");
+          slides[nextSlide].classList.add("active_slide");
+        }
+        nextSlide = nextSlide == 2 ? 0 : nextSlide + 1;
+        currentSlide = currentSlide == 2 ? 0 : currentSlide + 1;
+      }, 10000);
+    </script>
   </body>
 </html>
