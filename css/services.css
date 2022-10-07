@@ -1,9 +1,10 @@
 /* HERO section start */
 section.hero {
-  background-image: url(../images/otherpageBG.png);
+  background-image: url(../images/servicesBG.jpeg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 500px;
   color: white;
   position: relative;
   padding: 0;
@@ -20,20 +21,18 @@ section.hero div {
   padding-right: 30px;
 }
 
+section.hero div h2 {
+  font-size: 40px;
+}
+
 section.hero div p {
   margin-top: 15px;
   text-align: center;
+  font-size: 20px;
 }
 /* HERO section end */
 
 /* SERVICES section start */
-section.services {
-  background-color: #f7fffb;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 section.services .container {
   text-align: center;
 }
@@ -53,38 +52,33 @@ section.services .desc p {
   margin-bottom: 70px;
 }
 
-section.services .servicePhotos {
+section.services .service {
+  margin-top: 100px;
+}
+
+section.services .service img {
+  max-width: 700px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  width: 100%;
+}
+
+section.services .details {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 50px;
+  margin-top: 50px;
+  text-align: left;
 }
 
-section.services .servicePhotos div {
-  background-repeat: no-repeat;
-  border-radius: 15px;
-  height: 300px;
-  display: flex;
-  align-items: flex-end;
-  padding: 30px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
+section.services .container .service:nth-child(4) .details {
+  grid-template-columns: none;
+  text-align: center;
 }
 
-section.services .servicePhotos div:nth-child(1) {
-  background-image: url(../images/services\ 1.png);
-}
-
-section.services .servicePhotos div:nth-child(2) {
-  background-image: url(../images/services\ 2.png);
-}
-section.services .servicePhotos div:nth-child(3) {
-  background-image: url(../images/services\ 3.png);
-}
-
-section.services .servicePhotos div p {
-  color: white;
+section.services .details p {
+  line-height: 25px;
 }
 /* SERVICES section end */
 
