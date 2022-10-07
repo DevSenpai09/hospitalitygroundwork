@@ -1,9 +1,10 @@
 /* HERO section start */
 section.hero {
-  background-image: url(../images/otherpageBG.png);
+  background-image: url(../images/teamBG.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 500px;
   color: white;
   position: relative;
   padding: 0;
@@ -20,9 +21,14 @@ section.hero div {
   padding-right: 30px;
 }
 
+section.hero div h2 {
+  font-size: 40px;
+}
+
 section.hero div p {
   margin-top: 15px;
   text-align: center;
+  font-size: 20px;
 }
 /* HERO section end */
 
