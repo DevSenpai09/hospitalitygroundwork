@@ -146,6 +146,10 @@ section.services .container {
   text-align: center;
 }
 
+section.services .desc {
+  margin-bottom: 50px;
+}
+
 section.services .desc h3 {
   margin-bottom: 24px;
 }
@@ -158,7 +162,15 @@ section.services .desc h3 span {
 section.services .desc p {
   font-weight: 500;
   line-height: 35px;
-  margin-bottom: 70px;
+}
+
+section.services button {
+  background-color: #2ed081;
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 50px;
 }
 
 section.services .servicePhotos {
