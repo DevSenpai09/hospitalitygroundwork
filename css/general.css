@@ -329,12 +329,6 @@ footer .copyright {
   .container {
     max-width: 996px;
   }
-
-  /* Newsletter section start */
-  section.newsletter {
-    margin: 0;
-  }
-  /* Newsletter section end */
 }
 
 @media screen and (min-width: 1200px) {

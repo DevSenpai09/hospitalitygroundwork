@@ -22,7 +22,7 @@ section.hero div {
 }
 
 section.hero div h2 {
-  font-size: 40px;
+  font-size: clamp(30px, 5vw, 40px);
 }
 
 section.hero div p {
@@ -89,6 +89,12 @@ section.mission .right_side img {
   width: 35vw;
 }
 /*our mission  end */
+
+/* Newsletter Section */
+section.newsletter {
+  margin: 0;
+}
+/* End Newsletter Section */
 
 /* ----------RESPONSIVENESS--------- */
 @media screen and (min-width: 996px) {
