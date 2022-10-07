@@ -234,6 +234,91 @@ div.testsay div p:nth-child(4) {
   }
   /* hero end */
 
+  /* ABOUT section start */
+  section.about {
+    background-color: #f7fffb;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  section.about .container {
+    display: grid;
+  }
+
+  /* left part */
+  section.about .left-part {
+    display: none;
+  }
+
+  section.about .left-part h4 {
+    color: #2ed081;
+  }
+  section.about .left-part p {
+    margin-top: 24px;
+    line-height: 25px;
+  }
+  section.about .left-part ul {
+    margin-top: 32px;
+    line-height: 25px;
+  }
+
+  section.about .left-part ul li {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+  }
+
+  section.about .left-part ul li:nth-of-type(n + 2) {
+    margin-top: 10px;
+  }
+
+  section.about .left-part button {
+    background-color: #2ed081;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 32px;
+  }
+  section.about .left-part div {
+    margin-top: 20px;
+  }
+
+  /* right part */
+  section.about .right-part {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+  }
+  section.about .right-part div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+    background: #ffffff;
+    box-shadow: 0px -0.75419px 7.5419px rgba(0, 0, 0, 0.1),
+      0px 3.01676px 3.01676px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+
+  section.about .container .right-part div h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  section.about .right-part div p {
+    font-size: 12px;
+    color: #434343;
+    line-height: 18px;
+  }
+  /* ABOUT section end */
+
   /* services start */
   section.services > div:nth-child(1) p > span {
     display: none;
@@ -332,5 +417,38 @@ div.testsay div p:nth-child(4) {
 }
 
 @media screen and (max-width: 996px) {
+  /* About Start */
+
+  section.about {
+    background-color: #fff;
+  }
+
+  section.about .container {
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+
+  section.about .left-part {
+    display: block;
+  }
+
+  section.about .container .right-part {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.about .container .right-part div {
+    border-radius: 45px 0px 0px 0px;
+  }
+
+  section.about .container .right-part div h5 {
+    font-size: initial;
+  }
+
+  section.about .container .right-part div p {
+    font-weight: 400;
+    font-size: 12.067px;
+    line-height: 18px;
+  }
+  /* About End */
 }
 /* media query for phone sizes end */

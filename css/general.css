@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  margin-top: 100px;
+  margin-top: 70px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -134,160 +134,55 @@ header .mobile_nav.slide {
 }
 /* End Header */
 
-/* ABOUT section start */
-section.about {
-  background-color: #f7fffb;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
+/* Meet The Team Section */
+section.meet {
+  background-color: #f6f6f6;
+  padding-block: 70px;
 }
 
-section.about .container {
+section.meet .container {
   display: grid;
+  grid-gap: 50px;
 }
 
-/* left part */
-section.about .left-part {
-  display: none;
-}
-
-section.about .left-part h4 {
-  color: #2ed081;
-}
-section.about .left-part p {
-  margin-top: 24px;
-  line-height: 25px;
-}
-section.about .left-part ul {
-  margin-top: 32px;
-  line-height: 25px;
-}
-
-section.about .left-part ul li {
-  list-style-type: none;
-  display: flex;
-  gap: 10px;
-}
-
-section.about .left-part ul li:nth-of-type(n + 2) {
-  margin-top: 10px;
-}
-
-section.about .left-part button {
-  background-color: #2ed081;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 32px;
-}
-section.about .left-part div {
-  margin-top: 20px;
-}
-
-/* right part */
-section.about .right-part {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 50px;
-}
-section.about .right-part div {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-  padding: 20px;
-  gap: 10px;
-  background: #ffffff;
-  box-shadow: 0px -0.75419px 7.5419px rgba(0, 0, 0, 0.1),
-    0px 3.01676px 3.01676px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  max-width: 400px;
-  margin-inline: auto;
-}
-
-section.about .container .right-part div h5 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 22px;
-}
-
-section.about .right-part div p {
-  font-size: 12px;
-  color: #434343;
-  line-height: 18px;
-}
-/* ABOUT section end */
-
-/* meet start */
-
-section.meet .mediaMeetDesktop {
-  display: none;
-}
-
-.mediaMEET {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  text-align: center;
-  line-height: 30px;
-}
-.mediaMEET h2 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  width: max-content;
-  align-self: center;
-  display: grid;
-}
-
-.mediaMEET h2 hr {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  width: calc(100% + 80px);
-  justify-self: center;
-}
-.mediaMEET .team_member {
-  background: #ffffff;
-  box-shadow: 0px 0.02px 3.02px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  padding: 20px;
-  max-width: 400px;
-  margin-inline: auto;
-}
-
-.mediaMEET .team_member_img {
+section.meet img {
+  border-radius: 15px;
   width: 100%;
 }
 
-.mediaMEET h3 {
-  font-size: 24px;
-  font-weight: 500;
+section.meet .right_side {
+  text-align: center;
+  line-height: 30px;
+  display: grid;
+  gap: 20px;
+  min-width: 300px;
 }
 
-.mediaMEET p {
-  color: #2ed081;
+section.meet h2 span {
+  display: block;
+  border: 1px solid #d3d3d3;
+  line-height: inherit;
+  background: #d3d3d3;
+  margin-top: 10px;
 }
 
-.mediaMEET .link a {
+section.meet button {
+  color: #fff;
   background-color: #2ed081;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
+  width: max-content;
+  padding: 15px 40px;
   border-radius: 5px;
   font-size: 16px;
-  line-height: 19px;
-  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
 }
-.mediaMEET .link {
-  margin-top: 30px;
-}
-/* meet end */
+
+/* End Meet The Team Section */
 
 /* Newsletter section start */
 section.newsletter {
   background-image: linear-gradient(-8deg, var(--primary), var(--secondary)),
-    url(../images/Frame\ 30.png);
+    url(../images/newsletter.png);
   text-align: center;
   color: white;
   background-repeat: no-repeat;
@@ -404,6 +299,25 @@ footer .copyright {
     max-width: 768px;
   }
 
+  /* meet section start */
+  section.meet .container {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  section.meet .right_side {
+    text-align: left;
+  }
+
+  section.meet h2 span {
+    width: 65px;
+  }
+
+  section.meet button {
+    margin: 0;
+  }
+  /* meet section end */
+
   footer .contacts div:nth-of-type(-n + 3) {
     display: flex;
     gap: 15px;
@@ -414,90 +328,6 @@ footer .copyright {
   .container {
     max-width: 996px;
   }
-
-  /* About Start */
-
-  section.about {
-    background-color: #fff;
-  }
-
-  section.about .container {
-    grid-template-columns: auto auto;
-    gap: 50px;
-  }
-
-  section.about .left-part {
-    display: block;
-  }
-
-  section.about .container .right-part {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  section.about .container .right-part div {
-    border-radius: 45px 0px 0px 0px;
-  }
-
-  section.about .container .right-part div h5 {
-    font-size: initial;
-  }
-
-  section.about .container .right-part div p {
-    font-weight: 400;
-    font-size: 12.067px;
-    line-height: 18px;
-  }
-  /* About End */
-
-  /* meet section start */
-  section.meet {
-    background-color: #f6f6f6;
-    padding-block: 100px;
-  }
-
-  section.meet .container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 50px;
-    align-items: center;
-  }
-
-  section.meet .container img {
-    border-radius: 15px;
-    width: 50vw;
-  }
-
-  section.meet .meettext {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  section.meet .meettext h2 hr {
-    max-width: 65px;
-    margin-top: 25px;
-  }
-
-  section.meet .meettext p {
-    line-height: 35px;
-    font-size: 16px;
-  }
-
-  section.meet .meettext button {
-    text-decoration: none;
-    background-color: #2ed081;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  div.meettext button:hover {
-    background-color: #96e7c0;
-  }
-
-  .mediaMEET {
-    display: none;
-  }
-  /* meet section end */
 
   /* Newsletter section start */
   section.newsletter {
