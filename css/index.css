@@ -56,6 +56,91 @@ section.hero .heroButtons a:nth-child(2) button:hover {
 }
 /* HERO section end */
 
+/* ABOUT section start */
+section.about {
+  background-color: #f7fffb;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.about .container {
+  display: grid;
+}
+
+/* left part */
+section.about .left-part {
+  display: none;
+}
+
+section.about .left-part h4 {
+  color: #2ed081;
+}
+section.about .left-part p {
+  margin-top: 24px;
+  line-height: 25px;
+}
+section.about .left-part ul {
+  margin-top: 32px;
+  line-height: 25px;
+}
+
+section.about .left-part ul li {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+section.about .left-part ul li:nth-of-type(n + 2) {
+  margin-top: 10px;
+}
+
+section.about .left-part button {
+  background-color: #2ed081;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 32px;
+}
+section.about .left-part div {
+  margin-top: 20px;
+}
+
+/* right part */
+section.about .right-part {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+section.about .right-part div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 10px;
+  background: #ffffff;
+  box-shadow: 0px -0.75419px 7.5419px rgba(0, 0, 0, 0.1),
+    0px 3.01676px 3.01676px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+section.about .container .right-part div h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+section.about .right-part div p {
+  font-size: 12px;
+  color: #434343;
+  line-height: 18px;
+}
+/* ABOUT section end */
+
 /* SERVICES section start */
 section.services .container {
   text-align: center;
@@ -94,14 +179,14 @@ section.services .servicePhotos div {
 }
 
 section.services .servicePhotos div:nth-child(1) {
-  background-image: url(../images/services\ 1.png);
+  background-image: url(../images/advisoryServices.png);
 }
 
 section.services .servicePhotos div:nth-child(2) {
-  background-image: url(../images/services\ 2.png);
+  background-image: url(../images/facilityServices.png);
 }
 section.services .servicePhotos div:nth-child(3) {
-  background-image: url(../images/services\ 3.png);
+  background-image: url(../images/humanServices.png);
 }
 
 section.services .servicePhotos div p {
@@ -163,6 +248,14 @@ section.projectShow a button:hover {
   border: none;
 }
 /* projectshow end */
+
+/* Meet The Team */
+section.meet {
+  background-color: #fff;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* End Meet The Team */
 
 /* testimonial section start */
 div.test {
@@ -233,91 +326,6 @@ div.testsay div p:nth-child(4) {
     width: 100%;
   }
   /* hero end */
-
-  /* ABOUT section start */
-  section.about {
-    background-color: #f7fffb;
-    margin: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  section.about .container {
-    display: grid;
-  }
-
-  /* left part */
-  section.about .left-part {
-    display: none;
-  }
-
-  section.about .left-part h4 {
-    color: #2ed081;
-  }
-  section.about .left-part p {
-    margin-top: 24px;
-    line-height: 25px;
-  }
-  section.about .left-part ul {
-    margin-top: 32px;
-    line-height: 25px;
-  }
-
-  section.about .left-part ul li {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-  }
-
-  section.about .left-part ul li:nth-of-type(n + 2) {
-    margin-top: 10px;
-  }
-
-  section.about .left-part button {
-    background-color: #2ed081;
-    color: white;
-    padding: 15px 40px;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 32px;
-  }
-  section.about .left-part div {
-    margin-top: 20px;
-  }
-
-  /* right part */
-  section.about .right-part {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 50px;
-  }
-  section.about .right-part div {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    padding: 20px;
-    gap: 10px;
-    background: #ffffff;
-    box-shadow: 0px -0.75419px 7.5419px rgba(0, 0, 0, 0.1),
-      0px 3.01676px 3.01676px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    max-width: 400px;
-    margin-inline: auto;
-  }
-
-  section.about .container .right-part div h5 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 22px;
-  }
-
-  section.about .right-part div p {
-    font-size: 12px;
-    color: #434343;
-    line-height: 18px;
-  }
-  /* ABOUT section end */
 
   /* services start */
   section.services > div:nth-child(1) p > span {
@@ -416,7 +424,7 @@ div.testsay div p:nth-child(4) {
   }
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (min-width: 996px) {
   /* About Start */
 
   section.about {
