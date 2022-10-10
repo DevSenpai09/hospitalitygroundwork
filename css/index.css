@@ -1,5 +1,9 @@
 /* HERO section start */
 section.hero {
+  padding: 0;
+}
+
+section.hero .slide_wrapper {
   min-height: 60vh;
   color: white;
   margin: 0px;
@@ -88,6 +92,26 @@ section.hero .heroButtons a:nth-child(2) button {
 
 section.hero .heroButtons a:nth-child(2) button:hover {
   background-color: #646464;
+}
+
+section.hero .slide_indicator_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+section.hero .slide_indicator_wrapper span {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #555;
+}
+
+section.hero .slide_indicator_wrapper span.active {
+  background-color: #555;
 }
 /* HERO section end */
 
