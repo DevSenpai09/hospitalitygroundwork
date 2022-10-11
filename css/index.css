@@ -118,7 +118,7 @@ section.hero .slide_indicator_wrapper span.active {
 
 /* ABOUT section start */
 section.about {
-  background-color: #f7fffb;
+  background-color: var(--primaryColorBg);
   margin: 0;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -134,7 +134,7 @@ section.about .left-part {
 }
 
 section.about .left-part h4 {
-  color: #2ed081;
+  color: var(--primaryColor);
 }
 section.about .left-part p {
   margin-top: 24px;
@@ -149,6 +149,7 @@ section.about .left-part ul li {
   list-style-type: none;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 section.about .left-part ul li:nth-of-type(n + 2) {
@@ -156,7 +157,7 @@ section.about .left-part ul li:nth-of-type(n + 2) {
 }
 
 section.about .left-part button {
-  background-color: #2ed081;
+  background-color: var(--primaryColor);
   color: white;
   padding: 15px 40px;
   border-radius: 5px;
@@ -173,7 +174,7 @@ section.about .right-part {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
-section.about .right-part div {
+section.about .right-part .card {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -181,11 +182,20 @@ section.about .right-part div {
   padding: 20px;
   gap: 10px;
   background: #ffffff;
-  box-shadow: 0px -0.75419px 7.5419px rgba(0, 0, 0, 0.1),
-    0px 3.01676px 3.01676px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 15px -10px rgb(0 0 0 / 50%);
   border-radius: 10px;
   max-width: 400px;
   margin-inline: auto;
+}
+
+section.about .right-part .card .icon_wrapper {
+  background-color: var(--primaryColorBg);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+section.about .right-part .card .icon_wrapper img {
+  width: 2rem;
 }
 
 section.about .container .right-part div h5 {
@@ -195,9 +205,9 @@ section.about .container .right-part div h5 {
 }
 
 section.about .right-part div p {
-  font-size: 12px;
+  font-size: 0.9rem;
   color: #434343;
-  line-height: 18px;
+  line-height: 25px;
 }
 /* ABOUT section end */
 
@@ -215,17 +225,19 @@ section.services .desc h3 {
 }
 
 section.services .desc h3 span {
-  color: #2ed081;
+  color: var(--primaryColor);
   font-size: 25px;
 }
 
 section.services .desc p {
   font-weight: 500;
   line-height: 35px;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 section.services button {
-  background-color: #2ed081;
+  background-color: var(--primaryColor);
   padding: 15px 40px;
   border-radius: 5px;
   color: #fff;
@@ -296,28 +308,28 @@ section.projectShow .projectShowPics div h2 {
   padding-right: 24px;
 }
 section.projectShow .projectShowPics div p {
-  color: #2ed081;
+  color: var(--primaryColor);
   margin-top: 15px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 section.projectShow a {
-  margin-top: 100px;
+  margin-top: 70px;
   justify-self: center;
 }
 
 section.projectShow a button {
-  border: 1px solid black;
-  color: black;
-  padding: 16px 38px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 5px;
+  color: var(--primaryColor);
+  font-size: 1.1rem;
+  font-weight: 500;
   background-color: transparent;
+  display: flex;
+  align-items: center;
 }
-section.projectShow a button:hover {
-  border: none;
+
+section.projectShow a button img {
+  margin-left: 0.5rem;
 }
 /* projectshow end */
 
@@ -424,74 +436,19 @@ div.testsay div p:nth-child(4) {
     padding-top: 54%;
     padding-left: 9%;
   }
-
   /* services end */
 
-  /* testimonial start */
-  div.test h2 {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 600;
+  /* Project Showcase */
+  section.projectShow a {
+    margin-top: 50px;
+    justify-self: left;
+    padding: 24px;
   }
-  div.test h6 {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 600;
-  }
-  div.test .pMobShow {
-    display: block;
-    font-size: 14px;
-  }
-  div.test .pMobHide {
-    display: none;
-  }
-  div.testsay {
-    display: none;
-  }
-  .testsayHide {
-    margin: 7%;
-    padding: 7%;
-    display: block;
-    background: #ffffff;
-    box-shadow: 0px 0.02px 3.02px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-  }
-  .testsayHide .stars {
-    color: #ffcb46;
-    padding-bottom: 5%;
-    font-size: 24px;
-  }
-  .testsayHide .card {
-    display: flex;
-    padding-top: 8%;
-    align-self: center;
-  }
-  .testsayHide .card img {
-    height: 50px;
-    border-radius: 50%;
-  }
-  .testsayHide .card .cardDetails {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    padding-left: 10px;
-  }
-  .testsayHide .card .cardDetails h3 {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .testsayHide .card .cardDetails p {
-    color: #2ed081;
-  }
+  /* End Project Showcase */
 }
 
 @media screen and (min-width: 996px) {
   /* About Start */
-
-  section.about {
-    background-color: #fff;
-  }
-
   section.about .container {
     grid-template-columns: auto auto;
     gap: 50px;
@@ -506,17 +463,11 @@ div.testsay div p:nth-child(4) {
   }
 
   section.about .container .right-part div {
-    border-radius: 45px 0px 0px 0px;
+    border-radius: 35px 10px 10px 10px;
   }
 
   section.about .container .right-part div h5 {
     font-size: initial;
-  }
-
-  section.about .container .right-part div p {
-    font-weight: 400;
-    font-size: 12.067px;
-    line-height: 18px;
   }
   /* About End */
 }

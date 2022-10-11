@@ -8,7 +8,7 @@
 }
 :root {
   --primaryColor: #ca940c;
-  --primaryColorBg: #fffbf2;
+  --primaryColorBg: #fdfbf6;
   --primary: hsla(247, 87%, -24%, 0.1);
   --secondary: hsla(268, 148%, -54%, 3.575);
 }
@@ -157,6 +157,10 @@ section.meet .right_side {
   min-width: 300px;
 }
 
+section.meet .right_side p {
+  color: #555;
+}
+
 section.meet h2 span {
   display: block;
   border: 1px solid #d3d3d3;
@@ -167,7 +171,7 @@ section.meet h2 span {
 
 section.meet button {
   color: #fff;
-  background-color: #2ed081;
+  background-color: var(--primaryColor);
   width: max-content;
   padding: 15px 40px;
   border-radius: 5px;
@@ -219,7 +223,7 @@ section.newsletter form input {
   border: none;
 }
 section.newsletter button {
-  background-color: #2ed081;
+  background-color: var(--primaryColor);
   color: white;
   padding: 15px 20px;
   border-radius: 0 5px 5px 0;
