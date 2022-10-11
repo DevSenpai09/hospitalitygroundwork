@@ -120,8 +120,7 @@ section.hero .slide_indicator_wrapper span.active {
 section.about {
   background-color: var(--primaryColorBg);
   margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 30px;
 }
 
 section.about .container {
@@ -280,6 +279,11 @@ section.services .servicePhotos div p {
 
 /* projectshow start */
 
+section.projectShow {
+  background-color: var(--primaryColorBg);
+  padding: 100px 30px;
+}
+
 section.projectShow .container {
   display: grid;
 }
@@ -315,7 +319,7 @@ section.projectShow .projectShowPics div p {
 }
 
 section.projectShow a {
-  margin-top: 70px;
+  margin-top: 100px;
   justify-self: center;
 }
 
@@ -341,48 +345,6 @@ section.meet {
 }
 /* End Meet The Team */
 
-/* testimonial section start */
-div.test {
-  text-align: center;
-  padding: 5% 5%;
-}
-div.test h6 {
-  color: #2ed081;
-  margin-top: 5%;
-  font-size: large;
-}
-div.test h2 {
-  padding-top: 1%;
-  font-size: 30px;
-}
-div.test p {
-  padding-top: 1%;
-}
-div.testsay {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 5% 5%;
-}
-div.testsay div {
-  width: 80%;
-  text-align: center;
-  padding: 15px;
-  box-shadow: 2px -1px 9px -5px;
-}
-div.testsay div p {
-  margin: 6px 0;
-}
-div.test .pMobShow {
-  display: none;
-}
-div.testsay div p:nth-child(4) {
-  color: #7e7e7e;
-}
-.testsayHide {
-  display: none;
-}
-/* testimonial section end */
-
 /* media query for phone sizes start */
 @media screen and (max-width: 640px) {
   /* hero start */
@@ -399,6 +361,12 @@ div.testsay div p:nth-child(4) {
     text-align: center;
   }
   /* hero end */
+
+  /* About section */
+  section.about {
+    padding: 50px 30px;
+  }
+  /* End About Section */
 
   /* services start */
   section.services > div:nth-child(1) p > span {
@@ -439,6 +407,10 @@ div.testsay div p:nth-child(4) {
   /* services end */
 
   /* Project Showcase */
+  section.projectShow {
+    padding: 50px 30px;
+  }
+
   section.projectShow a {
     margin-top: 50px;
     justify-self: left;
