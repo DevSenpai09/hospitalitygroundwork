@@ -118,9 +118,7 @@ section.services .details p {
 }
 
 section.services .details .service_desc {
-  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.5);
   line-height: 25px;
-  padding: 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 1rem;
