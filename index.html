@@ -13,16 +13,6 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="./js/script.js" defer></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      defer
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      defer
-    ></script>
     <title>HGW</title>
   </head>
   <body>
@@ -42,8 +32,12 @@
           <li class="nav"><i class="icofont-navigation-menu"></i></li>
         </ul>
         <button onclick="setIsMobileNav()">
-          <ion-icon id="hamburger" name="menu-outline"></ion-icon>
-          <ion-icon id="cancel" name="close-circle-outline"></ion-icon>
+          <img
+            id="hamburger"
+            src="./icons/hamburger.svg"
+            alt="hamburger icon"
+          />
+          <img id="cancel" src="./icons/close.svg" alt="close icon" />
         </button>
       </div>
       <div class="mobile_nav">
@@ -73,7 +67,6 @@
 
             <div class="heroButtons">
               <a href=""><button>VIEW SERVICES</button></a>
-              <a href=""><button>CONTACT US</button></a>
             </div>
           </div>
         </div>
@@ -92,7 +85,6 @@
 
             <div class="heroButtons">
               <a href=""><button>VIEW SERVICES</button></a>
-              <a href=""><button>CONTACT US</button></a>
             </div>
           </div>
         </div>
@@ -109,7 +101,6 @@
 
             <div class="heroButtons">
               <a href=""><button>VIEW SERVICES</button></a>
-              <a href=""><button>CONTACT US</button></a>
             </div>
           </div>
         </div>

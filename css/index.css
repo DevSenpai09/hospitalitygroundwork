@@ -79,7 +79,7 @@ section.hero .heroButtons button {
 }
 
 section.hero .heroButtons a:nth-child(1) button {
-  background-color: #2ed081;
+  background-color: var(--primaryColor);
 }
 
 section.hero .heroButtons a:nth-child(1) button:hover {
@@ -100,6 +100,7 @@ section.hero .slide_indicator_wrapper {
   gap: 10px;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 section.hero .slide_indicator_wrapper span {
