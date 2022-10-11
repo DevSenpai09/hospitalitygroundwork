@@ -16,7 +16,7 @@ section.hero div {
   display: grid;
   align-content: center;
   justify-items: center;
-  background-color: rgba(202, 148, 12, 0.2);
+  background-color: rgba(30, 82, 255, 0.2);
   padding-left: 30px;
   padding-right: 30px;
 }
