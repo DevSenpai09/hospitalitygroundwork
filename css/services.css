@@ -57,19 +57,54 @@ section.services .service {
   margin-top: 100px;
 }
 
+section.services .service .intro {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+section.services .service .intro .left_side {
+  margin-top: 4rem;
+}
+
+section.services .service .intro .left_side img {
+  width: 100%;
+}
+
+section.services .service .intro .right_side {
+  text-align: left;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: auto auto 1fr;
+  color: #555;
+}
+
+section.services .service .intro .right_side h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 500;
+  line-height: 3rem;
+  color: var(--primaryColor);
+}
+
+section.services .service .intro .right_side h3 span {
+  border-bottom: 2px solid #ca940c;
+  display: block;
+  width: 5rem;
+  margin-top: 0.5rem;
+}
+
 section.services .service img {
   max-width: 700px;
   margin: auto;
   display: block;
-  margin-top: 50px;
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 section.services .details {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 4rem;
   text-align: left;
 }
 
@@ -80,7 +115,6 @@ section.services .container .service:nth-child(4) .details {
 
 section.services .details p {
   color: #555;
-  font-size: 1.1rem;
 }
 
 section.services .details .service_desc {
@@ -93,7 +127,7 @@ section.services .details .service_desc {
 }
 
 section.services .details p strong {
-  color: var(--primaryColor);
+  color: #000;
 }
 /* SERVICES section end */
 
@@ -183,5 +217,26 @@ section.more_services .icons div span img {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 50px;
     padding-block: 60px 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.services .service .intro {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.services .service .intro .left_side {
+    margin-top: 0;
+    margin-right: 3rem;
+    width: 60%;
+  }
+
+  section.services .service .intro .left_side img {
+    width: 100%;
+  }
+
+  section.services .service .intro .right_side {
+    width: 40%;
   }
 }
