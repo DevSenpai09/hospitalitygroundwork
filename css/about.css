@@ -16,7 +16,7 @@ section.hero div {
   display: grid;
   align-content: center;
   justify-items: center;
-  background-color: rgba(12, 90, 52, 0.6);
+  background-color: rgba(202, 148, 12, 0.2);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -39,7 +39,8 @@ section.about .container {
 }
 
 section.about .container h2 {
-  color: #2ed081;
+  color: var(--primaryColor);
+  font-weight: 500;
 }
 
 section.about .container p {
