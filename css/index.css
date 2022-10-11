@@ -147,12 +147,15 @@ section.about .left-part ul {
 section.about .left-part ul li {
   list-style-type: none;
   display: flex;
-  gap: 10px;
   align-items: center;
 }
 
 section.about .left-part ul li:nth-of-type(n + 2) {
   margin-top: 10px;
+}
+
+section.about .left-part ul li img {
+  margin-right: 0.5rem;
 }
 
 section.about .left-part button {
