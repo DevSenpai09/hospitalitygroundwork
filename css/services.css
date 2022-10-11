@@ -16,7 +16,7 @@ section.hero div {
   display: grid;
   align-content: center;
   justify-items: center;
-  background-color: rgba(12, 90, 52, 0.6);
+  background-color: rgba(202, 148, 12, 0.2);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -42,7 +42,7 @@ section.services .desc h3 {
 }
 
 section.services .desc h3 span {
-  color: #2ed081;
+  color: var(--primaryColor);
   font-size: 25px;
 }
 
@@ -50,6 +50,7 @@ section.services .desc p {
   font-weight: 500;
   line-height: 35px;
   margin-bottom: 70px;
+  font-size: 1.1rem;
 }
 
 section.services .service {
@@ -78,13 +79,28 @@ section.services .container .service:nth-child(4) .details {
 }
 
 section.services .details p {
+  color: #555;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+section.services .details .service_desc {
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.5);
   line-height: 25px;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+section.services .details p strong {
+  color: var(--primaryColor);
 }
 /* SERVICES section end */
 
 /* More Services */
 section.more_services h3 {
-  color: #2ed081;
+  color: var(--primaryColor);
   text-align: center;
 }
 
@@ -102,12 +118,15 @@ section.more_services p {
   margin-top: 24px;
   text-align: center;
   line-height: 25px;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 section.more_services h5 {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
+  color: #555;
 }
 
 section.more_services .icons {
@@ -122,6 +141,17 @@ section.more_services .icons div {
   display: grid;
   justify-items: center;
   gap: 20px;
+}
+
+section.more_services .icons div span {
+  background-color: var(--primaryColorBg);
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+section.more_services .icons div span img {
+  width: 2rem;
 }
 /* End More Services */
 
