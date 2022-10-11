@@ -7,6 +7,7 @@
   outline: none;
 }
 :root {
+  --primaryColor: #ca940c;
   --primary: hsla(247, 87%, -24%, 0.1);
   --secondary: hsla(268, 148%, -54%, 3.575);
 }
@@ -68,21 +69,18 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  color: black;
+  color: #555;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
 
 header ul li a.active {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #333;
-  padding-inline: 5px;
+  color: var(--primaryColor);
 }
 
 header ul li a:hover {
-  color: #96e7c0;
-  border-bottom-color: #96e7c0;
+  color: var(--primaryColor);
 }
 header ul .nav {
   display: none;
@@ -103,7 +101,8 @@ header #cancel {
 
 header .mobile_nav {
   position: fixed;
-  background-color: #1f8b56;
+  background-color: #fff;
+  border-top: 1px solid #555;
   width: 100%;
   height: calc(100% - 80px);
   left: 0;
@@ -119,14 +118,12 @@ header .mobile_nav {
 
 header .mobile_nav a {
   font-size: 24px;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 500;
+  color: #555;
 }
 
 header .mobile_nav a.active {
-  border-bottom: 2px solid #fff;
-  padding-bottom: 5px;
-  padding-inline: 5px;
+  color: var(--primaryColor);
 }
 
 header .mobile_nav.slide {
