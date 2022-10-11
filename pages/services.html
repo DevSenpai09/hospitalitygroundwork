@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/services.css" />
     <script src="../js/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
     <title>Services</title>
   </head>
   <body>
@@ -28,16 +38,8 @@
           <li class="nav"><i class="icofont-navigation-menu"></i></li>
         </ul>
         <button onclick="setIsMobileNav()">
-          <img
-            id="cancel"
-            src="../icons/cancel-outline-rounded.svg"
-            alt="cancelicon"
-          />
-          <img
-            id="hamburger"
-            src="../icons/charm_menu-hamburger.svg"
-            alt="cancelicon"
-          />
+          <ion-icon id="hamburger" name="menu-outline"></ion-icon>
+          <ion-icon id="cancel" name="close-circle-outline"></ion-icon>
         </button>
       </div>
       <div class="mobile_nav">
