@@ -12,7 +12,7 @@
   --primaryColor: #ca940c;
   --primaryColorBg: #fdfbf6;
   --primary: hsla(247, 87%, -24%, 0.1);
-  --secondary: hsla(268, 148%, -54%, 3.575);
+  --secondary: hsla(268, 148%, -54%, 0.7);
 }
 
 body {
