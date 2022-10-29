@@ -36,7 +36,7 @@ hr {
 }
 
 a {
-  display: flex;
+  display: block;
 }
 
 .container {
@@ -109,7 +109,7 @@ header .mobile_nav {
   width: 100%;
   height: calc(100% - 80px);
   left: 0;
-  top: 80px;
+  top: 82px;
   z-index: 99;
   display: grid;
   align-content: center;

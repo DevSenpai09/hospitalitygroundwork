@@ -61,7 +61,9 @@ section.hero div h2 {
   font-size: clamp(24px, 5vw, 32px);
   max-width: 630px;
   line-height: 40px;
+  text-transform: uppercase;
 }
+
 section.hero div p {
   font-size: 16px;
   line-height: 30px;
@@ -238,13 +240,17 @@ section.services .desc p {
   font-size: 1.1rem;
 }
 
+section.services a {
+  margin: auto;
+  margin-top: 50px;
+}
+
 section.services button {
   background-color: var(--primaryColor);
   padding: 15px 40px;
   border-radius: 5px;
   color: #fff;
   font-size: 16px;
-  margin-top: 50px;
 }
 
 section.services .servicePhotos {
@@ -269,7 +275,7 @@ section.services .servicePhotos div:nth-child(1) {
 }
 
 section.services .servicePhotos div:nth-child(2) {
-  background-image: url(../images/facilityServices.png);
+  background-image: url(../images/facilityServicesBG.jpg);
 }
 section.services .servicePhotos div:nth-child(3) {
   background-image: url(../images/humanServices.png);
